@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 17, 24, 39; /* Ebony base */
+  --background-start-rgb: 253, 251, 247; /* Warm Cream */
+  --background-end-rgb: 248, 250, 252; /* Warm Sand */
+}
+
+/* Base resets */
+@layer base {
+  body {
+    @apply bg-warm-cream text-ebony font-sans antialiased;
+  }
+
+  /* Handle text selection cleanly without using unstable complex @apply utilities */
+  ::selection {
+    background-color: rgba(15, 30, 54, 0.1); /* Soft Navy background */
+    color: #0f1e36; /* Navy text */
+  }
+
+  /* Editorial style adjustments for headers */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight text-ebony-900;
+  }
+}
+
+/* Custom component shortcuts */
+@layer components {
+  /* Premium Primary Filled Button (Navy Blue) */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-none text-white bg-navy hover:bg-navy-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-navy;
+  }
+
+  /* Premium Secondary Outlined Button (Ebony) */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-ebony text-base font-medium rounded-none text-ebony hover:bg-ebony hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ebony;
+  }
+
+  /* Section Containers for consistent padding across pages */
+  .section-padding {
+    @apply py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto;
+  }
+}
