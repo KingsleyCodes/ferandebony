@@ -27,17 +27,15 @@ export default function AboutPage() {
       
       {/* 🔷 SECTION 1: EDITORIAL HEADER CANVAS */}
       <section className="bg-navy text-white relative overflow-hidden">
-        {/* Subtle architectural background alignment marks */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.02),transparent_40%)]" />
-        
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 md:py-28 text-center flex flex-col items-center">
           <div className="space-y-4 max-w-3xl">
             <span className="text-[10px] tracking-[0.4em] uppercase text-white/50 font-bold font-sans block">
               Corporate Identity
             </span>
-           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-[1.15] tracking-tight">
-  About Us
-</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-[1.15] tracking-tight">
+              About Us
+            </h1>
             <div className="w-12 h-[1px] bg-white/20 mx-auto mt-6"></div>
           </div>
         </div>
@@ -79,7 +77,57 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 🔷 SECTION 3: THE FERN VALUES FRAMEWORK MATRIX */}
+      {/* 🔷 SECTION 3: FOUNDER SPOTLIGHT SECTION (NEW) */}
+      <section className="bg-white border-b border-ebony/5">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 md:py-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          {/* Left: Founder Picture Frame Container */}
+          <div className="lg:col-span-5 w-full max-w-md mx-auto lg:max-w-none aspect-[4/5] relative bg-warm-sand border border-ebony/10 shadow-sm p-4 overflow-hidden group">
+            {/* Architectural Border Design Detail */}
+            <div className="absolute top-0 right-0 w-6 h-[1px] bg-navy/20"></div>
+            <div className="absolute top-0 right-0 w-[1px] h-6 bg-navy/20"></div>
+            
+            {/* The Actual Image Placeholder Block */}
+            <div 
+              className="w-full h-full bg-cover bg-center bg-no-repeat bg-neutral-200 filter contrast-115 transition-transform duration-700 group-hover:scale-102 flex items-center justify-center text-center p-6"
+              style={{ backgroundImage: "url('/founder.jpg')" }} // Place portrait photo in public folder as simi-adeyinka.jpg
+            >
+              {/* Fallback indicator layer if image path is temporarily unmapped during development */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-ebony/5 text-ebony/30 p-4 font-sans font-medium text-xs uppercase tracking-widest pointer-events-none">
+                
+
+              </div>
+            </div>
+          </div>
+
+          {/* Right: Biography Typography */}
+          <div className="lg:col-span-7 space-y-6 font-sans text-base text-ebony-600 leading-relaxed">
+            <div className="space-y-1">
+              <span className="text-[10px] tracking-[0.3em] uppercase text-navy font-bold block">
+                Leadership
+              </span>
+              <h2 className="text-3xl font-serif font-bold text-ebony-900 tracking-tight">
+                Similolu Adeyinka
+              </h2>
+              <p className="text-xs uppercase tracking-widest text-ebony-400 font-bold font-sans">
+                Founder, Fern and Ebony
+              </p>
+            </div>
+
+            <div className="space-y-4 pt-4 border-t border-ebony/5 text-sm sm:text-base">
+              <p className="text-ebony-800 font-medium">
+                Similolu Adeyinka is a strategic HR and business management professional with extensive experience in organisational development, leadership capability building, and workforce transformation. With a strong focus on aligning people strategy to business performance, Simi has worked across diverse sectors to design and implement practical, high-impact solutions that strengthen culture, improve engagement, and drive sustainable growth.
+              </p>
+              <p>
+                As the founder of Fern and Ebony, Simi brings a forward-thinking and entrepreneurial approach to consulting, helping organisations navigate complexity through risk-aware decision-making, leadership development, and people-centred strategy. Passionate about enabling organisations to thrive, Simi combines analytical insight with practical execution to deliver measurable value at board and operational levels.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* 🔷 SECTION 4: THE FERN VALUES FRAMEWORK MATRIX */}
       <section className="bg-warm-sand">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 md:py-28">
           
