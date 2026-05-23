@@ -17,7 +17,7 @@ export default function Navbar() {
         {/* Brand Identity / Logo Lockup */}
         <Link href="/" className="group flex flex-col space-y-0.5 tracking-tight focus:outline-none">
           <span className="font-serif text-xl sm:text-2xl tracking-[0.05em] font-bold text-ebony-900 group-hover:text-navy transition-colors duration-300">
-            FER & EBONY
+            FERN & EBONY
           </span>
           <span className="text-[8px] sm:text-[9px] tracking-[0.25em] uppercase text-navy/70 font-semibold font-sans">
             The Human Communications Company
